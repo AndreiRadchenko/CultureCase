@@ -1,0 +1,394 @@
+- id: '1768978718354'
+  alias: Drawer 1
+  description: Play audio inside drawer 1 when it's open
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_drawer_detector_1
+    from:
+    - 'off'
+    to:
+    - 'on'
+    id: drawer_opened
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_drawer_detector_1
+    from:
+    - 'on'
+    to:
+    - 'off'
+    id: drawer_closed
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_opened
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          target_player: media_player.headphones2
+          target_volume: 0.7
+          duration: 0.6
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_closed
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.6
+          target_player: media_player.headphones2
+          target_volume: 0
+  mode: restart
+- id: '1768981772393'
+  alias: Headphones 1
+  description: Play audio on headphone 1 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_1
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_1
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones1
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones1
+          target_volume: 0
+  mode: restart
+- id: '1768983893793'
+  alias: Headphone 1 up volume
+  description: Play audio on headphone 1 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_2
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_2
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones1
+          target_volume: 0.7
+        enabled: false
+      - action: media_player.volume_up
+        metadata: {}
+        target:
+          entity_id: media_player.headphones1
+        data: {}
+        enabled: false
+      - action: media_player.volume_set
+        metadata: {}
+        target:
+          entity_id: media_player.headphones1
+        data:
+          volume_level: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones1
+          target_volume: 0
+        enabled: false
+      - action: media_player.volume_down
+        metadata: {}
+        target:
+          entity_id: media_player.headphones1
+        data: {}
+        enabled: false
+      - action: media_player.volume_set
+        metadata: {}
+        target:
+          entity_id: media_player.headphones1
+        data:
+          volume_level: 0
+  mode: single
+- id: '1771365217136'
+  alias: Headphones 2
+  description: Play audio on headphone 2 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_2
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_2
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones2
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones2
+          target_volume: 0
+  mode: restart
+- id: '1771365468884'
+  alias: Headphones 3
+  description: Play audio on headphone 3 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_3
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_3
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones3
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones3
+          target_volume: 0
+  mode: restart
+- id: '1771365529930'
+  alias: Headphones 4
+  description: Play audio on headphone 4 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_4
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_4
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones4
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones4
+          target_volume: 0
+  mode: restart
+- id: '1771365672440'
+  alias: Headphones 5
+  description: Play audio on headphone 5 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_5
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_5
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones5
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones5
+          target_volume: 0
+  mode: restart
+- id: '1771365738372'
+  alias: Headphones 6
+  description: Play audio on headphone 6 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_6
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.headphones_headphones_detector_6
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones6
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.headphones6
+          target_volume: 0
+  mode: restart
