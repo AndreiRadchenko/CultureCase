@@ -1,0 +1,1295 @@
+- id: '1771586315521'
+  name: All Players Off
+  entities:
+    media_player.drawer1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:10
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer1
+      supported_features: 8320951
+      state: 'off'
+    media_player.drawer2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:11
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer2
+      supported_features: 8320951
+      state: 'off'
+    media_player.drawer3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:12
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer3
+      supported_features: 8320951
+      state: 'off'
+    media_player.drawer4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:13
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer4
+      supported_features: 8320951
+      state: 'off'
+    media_player.drawer5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:17
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer5
+      supported_features: 8320951
+      state: 'off'
+    media_player.headphones1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:01
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones1
+      supported_features: 8320951
+      state: 'off'
+    media_player.headphones2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:02
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones2
+      supported_features: 8320951
+      state: 'off'
+    media_player.headphones3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:03
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones3
+      supported_features: 8320951
+      state: 'off'
+    media_player.headphones4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:04
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones4
+      supported_features: 8320951
+      state: 'off'
+    media_player.headphones5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:05
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones5
+      supported_features: 8320951
+      state: 'off'
+    media_player.headphones6:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:06
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones6
+      supported_features: 8320951
+      state: 'off'
+    media_player.pipe1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:07
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe1
+      supported_features: 8320951
+      state: 'off'
+    media_player.pipe2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:08
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe2
+      supported_features: 8320951
+      state: 'off'
+    media_player.pipe3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:09
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe3
+      supported_features: 8320951
+      state: 'off'
+    media_player.pipe4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:14
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe4
+      supported_features: 8320951
+      state: 'off'
+    media_player.pipe5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:15
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe5
+      supported_features: 8320951
+      state: 'off'
+    media_player.pipe6:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:16
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe6
+      supported_features: 8320951
+      state: 'off'
+  metadata: {}
+  icon: mdi:speaker-off
+- id: '1771586520109'
+  name: All Players On Silent
+  entities:
+    media_player.drawer1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:10
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer1
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.152359+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.drawer2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:11
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer2
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.178110+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.drawer3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:12
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer3
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:22.835364+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.drawer4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:13
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer4
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/7
+      media_content_type: music
+      media_duration: 292
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.179835+00:00'
+      media_title: Thunderstruck (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.drawer5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:17
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer5
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.190952+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.headphones1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:01
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones1
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/2
+      media_content_type: music
+      media_duration: 543
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.230861+00:00'
+      media_title: The Talisman (Sefon.me)
+      media_artist: Iron Maiden
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.headphones2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:02
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones2
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/1
+      media_content_type: music
+      media_duration: 434
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.215061+00:00'
+      media_title: Blood Brothers (Sefon.Pro)
+      media_artist: Iron Maiden
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.headphones3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:03
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones3
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/4
+      media_content_type: music
+      media_duration: 208
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.249484+00:00'
+      media_title: Highway To Hell (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.headphones4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:04
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones4
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/6
+      media_content_type: music
+      media_duration: 222
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.232405+00:00'
+      media_title: Kings Of Metal (Sefon.me)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.headphones5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:05
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones5
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/8
+      media_content_type: music
+      media_duration: 311
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.251116+00:00'
+      media_title: Number 1 (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.headphones6:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:06
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones6
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.245288+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.pipe1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:07
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe1
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/7
+      media_content_type: music
+      media_duration: 292
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.271696+00:00'
+      media_title: Thunderstruck (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.pipe2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:08
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe2
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.288909+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.pipe3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:09
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe3
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.290701+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.pipe4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:14
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe4
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.273692+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.pipe5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:15
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe5
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.306603+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+    media_player.pipe6:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:16
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe6
+      supported_features: 8320951
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:25:25.308386+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: idle
+  metadata: {}
+  icon: mdi:speaker
+- id: '1771586983526'
+  name: All Players On Playing 70
+  entities:
+    media_player.drawer1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:10
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer1
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:26:57.446975+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.drawer2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:11
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer2
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:27:23.139489+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.drawer3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:12
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer3
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:27:47.039688+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.drawer4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:13
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer4
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/7
+      media_content_type: music
+      media_duration: 292
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:28:10.538466+00:00'
+      media_title: Thunderstruck (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.drawer5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:17
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer5
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:28:31.701940+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.headphones1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:01
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones1
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/2
+      media_content_type: music
+      media_duration: 543
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:26:49.123429+00:00'
+      media_title: The Talisman (Sefon.me)
+      media_artist: Iron Maiden
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.headphones2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:02
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones2
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/1
+      media_content_type: music
+      media_duration: 434
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:27:14.878376+00:00'
+      media_title: Blood Brothers (Sefon.Pro)
+      media_artist: Iron Maiden
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.headphones3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:03
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones3
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/4
+      media_content_type: music
+      media_duration: 208
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:27:38.330784+00:00'
+      media_title: Highway To Hell (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.headphones4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:04
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones4
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/6
+      media_content_type: music
+      media_duration: 222
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:28:01.826511+00:00'
+      media_title: Kings Of Metal (Sefon.me)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.headphones5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:05
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones5
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/8
+      media_content_type: music
+      media_duration: 311
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:28:23.846153+00:00'
+      media_title: Number 1 (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.headphones6:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:06
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones6
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:28:49.244115+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.pipe1:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:07
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe1
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/7
+      media_content_type: music
+      media_duration: 292
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:27:07.963710+00:00'
+      media_title: Thunderstruck (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.pipe2:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:08
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe2
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:27:31.167336+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.pipe3:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:09
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe3
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:27:54.612422+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.pipe4:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:14
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe4
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:28:17.708886+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.pipe5:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:15
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe5
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:28:41.273831+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+    media_player.pipe6:
+      group_members: []
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:16
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe6
+      supported_features: 8320951
+      volume_level: 0.7
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T11:28:58.093386+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      state: playing
+  metadata: {}
+  icon: mdi:speaker-wireless
+- id: '1771589104187'
+  name: All Players On Playing 0
+  entities:
+    media_player.drawer1:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:41.682717+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:10
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer1
+      supported_features: 8320951
+      state: playing
+    media_player.drawer2:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.868378+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:11
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer2
+      supported_features: 8320951
+      state: playing
+    media_player.drawer3:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:41.836792+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:12
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer3
+      supported_features: 8320951
+      state: playing
+    media_player.drawer4:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/7
+      media_content_type: music
+      media_duration: 292
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:41.730815+00:00'
+      media_title: Thunderstruck (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:13
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer4
+      supported_features: 8320951
+      state: playing
+    media_player.drawer5:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:41.729216+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:17
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: drawer5
+      supported_features: 8320951
+      state: playing
+    media_player.headphones1:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/2
+      media_content_type: music
+      media_duration: 543
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:41.749963+00:00'
+      media_title: The Talisman (Sefon.me)
+      media_artist: Iron Maiden
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:01
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones1
+      supported_features: 8320951
+      state: playing
+    media_player.headphones2:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/1
+      media_content_type: music
+      media_duration: 434
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.869094+00:00'
+      media_title: Blood Brothers (Sefon.Pro)
+      media_artist: Iron Maiden
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:02
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones2
+      supported_features: 8320951
+      state: playing
+    media_player.headphones3:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/4
+      media_content_type: music
+      media_duration: 208
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.866777+00:00'
+      media_title: Highway To Hell (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:03
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones3
+      supported_features: 8320951
+      state: playing
+    media_player.headphones4:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/6
+      media_content_type: music
+      media_duration: 222
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.867110+00:00'
+      media_title: Kings Of Metal (Sefon.me)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:04
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones4
+      supported_features: 8320951
+      state: playing
+    media_player.headphones5:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/8
+      media_content_type: music
+      media_duration: 311
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:41.848081+00:00'
+      media_title: Number 1 (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:05
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones5
+      supported_features: 8320951
+      state: playing
+    media_player.headphones6:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.867485+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:06
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: headphones6
+      supported_features: 8320951
+      state: playing
+    media_player.pipe1:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/7
+      media_content_type: music
+      media_duration: 292
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:43.893273+00:00'
+      media_title: Thunderstruck (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:07
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe1
+      supported_features: 8320951
+      state: playing
+    media_player.pipe2:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.867872+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:08
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe2
+      supported_features: 8320951
+      state: playing
+    media_player.pipe3:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/5
+      media_content_type: music
+      media_duration: 206
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.868135+00:00'
+      media_title: Who Made Who (Sefon.me)
+      media_artist: AC-DC
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:09
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe3
+      supported_features: 8320951
+      state: playing
+    media_player.pipe4:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 149
+      media_position_updated_at: '2026-02-20T12:18:42.900622+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:14
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe4
+      supported_features: 8320951
+      state: playing
+    media_player.pipe5:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.868836+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:15
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe5
+      supported_features: 8320951
+      state: playing
+    media_player.pipe6:
+      group_members: []
+      volume_level: 0
+      media_content_id: library://track/3
+      media_content_type: music
+      media_duration: 202
+      media_position: 0
+      media_position_updated_at: '2026-02-20T12:18:42.869394+00:00'
+      media_title: Outlaw (Sefon.Pro)
+      media_artist: Manowar
+      app_id: music_assistant
+      source: Music Assistant Queue
+      shuffle: false
+      repeat: one
+      entity_picture_local:
+      mass_player_type: player
+      active_queue: 00:00:00:00:00:16
+      device_class: speaker
+      icon: mdi:speaker
+      friendly_name: pipe6
+      supported_features: 8320951
+      state: playing
+  metadata: {}
+  icon: mdi:speaker

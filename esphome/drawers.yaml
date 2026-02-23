@@ -54,7 +54,7 @@ web_server:
 
 # captive_portal:
 
-# GPIO15 (Internal Pull-up): drawer_detector_4
+# GPIO35 (Input only, No Pull-up): drawer_detector_4
 
 # GPIO32 (Internal Pull-up): drawer_detector_1
 # GPIO33 (Internal Pull-up): drawer_detector_2
@@ -105,9 +105,7 @@ binary_sensor:
 
   - platform: gpio
     pin:
-      number: GPIO15
-      mode: INPUT_PULLUP
-      # inverted: True
+      number: GPIO35
     id: drawer_detector_4
     name: "Drawer detector 4"
     device_class: door
@@ -129,6 +127,7 @@ binary_sensor:
   - platform: gpio
     pin:
       number: GPIO14
+      mode: INPUT_PULLUP
       inverted: True
     id: pipe_detector_2
     name: "Pipe detector 2"

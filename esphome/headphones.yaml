@@ -143,7 +143,7 @@ binary_sensor:
       number: GPIO14
       mode: INPUT_PULLUP
       inverted: True
-    id: pipe_detector_5
+    id: headphones_detector_5
     name: "Headphones detector 5"
     device_class: occupancy
     filters:
@@ -155,7 +155,7 @@ binary_sensor:
       number: GPIO04
       mode: INPUT_PULLUP
       inverted: True
-    id: pipe_detector_6
+    id: headphones_detector_6
     name: "Headphones detector 6"
     device_class: occupancy
     filters:

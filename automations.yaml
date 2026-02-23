@@ -4,7 +4,7 @@
   triggers:
   - trigger: state
     entity_id:
-    - binary_sensor.headphones_drawer_detector_1
+    - binary_sensor.drawers_drawer_detector_1
     from:
     - 'off'
     to:
@@ -12,7 +12,7 @@
     id: drawer_opened
   - trigger: state
     entity_id:
-    - binary_sensor.headphones_drawer_detector_1
+    - binary_sensor.drawers_drawer_detector_1
     from:
     - 'on'
     to:
@@ -29,7 +29,7 @@
       - action: script.fade_volume
         metadata: {}
         data:
-          target_player: media_player.headphones2
+          target_player: media_player.drawer1
           target_volume: 0.7
           duration: 0.6
     - conditions:
@@ -41,7 +41,7 @@
         metadata: {}
         data:
           duration: 0.6
-          target_player: media_player.headphones2
+          target_player: media_player.drawer1
           target_volume: 0
   mode: restart
 - id: '1768981772393'
@@ -391,4 +391,532 @@
           duration: 0.5
           target_player: media_player.headphones6
           target_volume: 0
+  mode: restart
+- id: '1771442119383'
+  alias: Drawer 2
+  description: Play audio inside drawer 2 when it's open
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_drawer_detector_2
+    from:
+    - 'off'
+    to:
+    - 'on'
+    id: drawer_opened
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_drawer_detector_2
+    from:
+    - 'on'
+    to:
+    - 'off'
+    id: drawer_closed
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_opened
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          target_player: media_player.drawer2
+          target_volume: 0.7
+          duration: 0.6
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_closed
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.6
+          target_player: media_player.drawer2
+          target_volume: 0
+  mode: restart
+- id: '1771442412722'
+  alias: Drawer 3
+  description: Play audio inside drawer 3 when it's open
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_drawer_detector_3
+    from:
+    - 'off'
+    to:
+    - 'on'
+    id: drawer_opened
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_drawer_detector_3
+    from:
+    - 'on'
+    to:
+    - 'off'
+    id: drawer_closed
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_opened
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          target_player: media_player.drawer3
+          target_volume: 0.7
+          duration: 0.6
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_closed
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.6
+          target_player: media_player.drawer3
+          target_volume: 0
+  mode: restart
+- id: '1771442828994'
+  alias: Drawer 5
+  description: Play audio inside drawer 5 when it's open
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_drawer_detector_5
+    from:
+    - 'off'
+    to:
+    - 'on'
+    id: drawer_opened
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_drawer_detector_5
+    from:
+    - 'on'
+    to:
+    - 'off'
+    id: drawer_closed
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_opened
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          target_player: media_player.drawer5
+          target_volume: 0.7
+          duration: 0.6
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_closed
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.6
+          target_player: media_player.drawer5
+          target_volume: 0
+  mode: restart
+- id: '1771444685417'
+  alias: Pipe 1
+  description: Play audio on pipe 1 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_pipe_detector_1
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_pipe_detector_1
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe1
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe1
+          target_volume: 0
+  mode: restart
+- id: '1771444731405'
+  alias: Pipe 2
+  description: Play audio on pipe 2 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_pipe_detector_2
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_pipe_detector_2
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe2
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe2
+          target_volume: 0
+  mode: restart
+- id: '1771444767439'
+  alias: Pipe 3
+  description: Play audio on pipe 3 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_pipe_detector_3
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_pipe_detector_3
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe3
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe3
+          target_volume: 0
+  mode: restart
+- id: '1771444853004'
+  alias: Pipe 4
+  description: Play audio on pipe 4 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_pipe_detector_4
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_pipe_detector_4
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe4
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe4
+          target_volume: 0
+  mode: restart
+- id: '1771444884604'
+  alias: Pipe 5
+  description: Play audio on pipe 5 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_pipe_detector_5
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_pipe_detector_5
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe5
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe5
+          target_volume: 0
+  mode: restart
+- id: '1771444921321'
+  alias: Pipe 6
+  description: Play audio on pipe 6 when it's taken
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_pipe_detector_6
+    id: headphones_taken
+    from:
+    - 'on'
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_pipe_detector_6
+    id: headphones_detected
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_taken
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe6
+          target_volume: 0.7
+    - conditions:
+      - condition: trigger
+        id:
+        - headphones_detected
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.5
+          target_player: media_player.pipe6
+          target_volume: 0
+  mode: restart
+- id: '1771587831084'
+  alias: Play all players on system starts
+  description: ''
+  triggers:
+  - trigger: homeassistant
+    event: start
+  conditions: []
+  actions:
+  - action: scene.turn_on
+    metadata: {}
+    target:
+      entity_id: scene.all_players_off
+    data: {}
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
+  - action: scene.turn_on
+    metadata: {}
+    target:
+      entity_id: scene.all_players_on_playing_70
+    data:
+      transition: 0.5
+  mode: single
+- id: '1771697168545'
+  alias: Drawer 4
+  description: Play audio inside drawer 4 when it's open
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_drawer_detector_4
+    from:
+    - 'off'
+    to:
+    - 'on'
+    id: drawer_opened
+  - trigger: state
+    entity_id:
+    - binary_sensor.drawers_drawer_detector_4
+    from:
+    - 'on'
+    to:
+    - 'off'
+    id: drawer_closed
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_opened
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          target_player: media_player.drawer4
+          target_volume: 0.7
+          duration: 0.6
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_closed
+      sequence:
+      - action: script.fade_volume
+        metadata: {}
+        data:
+          duration: 0.6
+          target_player: media_player.drawer4
+          target_volume: 0
+  mode: restart
+- id: '1771843927367'
+  alias: Tablet
+  description: Play audio inside drawer 5 when it's open
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_drawer_detector_5
+    from:
+    - 'off'
+    to:
+    - 'on'
+    id: drawer_opened
+  - trigger: state
+    entity_id:
+    - binary_sensor.pipes_drawer_detector_5
+    from:
+    - 'on'
+    to:
+    - 'off'
+    id: drawer_closed
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_opened
+      sequence:
+      - target:
+          entity_id: media_player.android_tv_192_168_1_103
+        action: media_player.media_play
+    - conditions:
+      - condition: trigger
+        id:
+        - drawer_closed
+      sequence:
+      - target:
+          entity_id: media_player.android_tv_192_168_1_103
+        action: media_player.media_play_pause
+      - target:
+          entity_id: media_player.android_tv_192_168_1_103
+        action: media_player.media_previous_track
   mode: restart

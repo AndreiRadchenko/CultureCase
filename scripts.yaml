@@ -1,6 +1,7 @@
 fade_volume:
   alias: Fade Volume
-  mode: restart
+  mode: parallel
+  max: 20
   fields:
     target_player:
       required: true
