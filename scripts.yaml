@@ -48,3 +48,91 @@ fade_volume:
     data:
       volume_level: '{{ target_volume }}'
     action: media_player.volume_set
+tablet_screen_off:
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    target:
+      entity_id: remote.android_tv_192_168_1_184
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      command: POWER
+  alias: Tablet screen off
+  description: ''
+tablet_screen_on:
+  alias: Tablet screen on
+  sequence:
+  - target:
+      entity_id: media_player.android_tv_192_168_1_184
+    data:
+      command: POWER
+    action: remote.send_command
+  - delay: 00:00:01
+  - target:
+      entity_id: media_player.android_tv_192_168_1_184
+    data:
+      command: input keyevent KEYCODE_WAKEUP
+    action: androidtv.adb_command
+  icon: mdi:brightness-7
+  mode: single
+  description: ''
+tablet_brightness_0:
+  alias: Tablet brightness 0%
+  sequence:
+  - target:
+      entity_id: media_player.android_tv_192_168_1_184
+    data:
+      command: settings put system screen_brightness 0
+    action: androidtv.adb_command
+  icon: mdi:brightness-1
+  mode: single
+  description: ''
+tablet_brightness_80:
+  alias: Tablet brightness 80
+  sequence:
+  - target:
+      entity_id: media_player.android_tv_192_168_1_184
+    data:
+      command: settings put system screen_brightness 80
+    action: androidtv.adb_command
+  icon: mdi:brightness-1
+  mode: single
+  description: ''
+tablet_check_battery_now:
+  alias: 'Tablet: Check Battery Now'
+  sequence:
+  - target:
+      entity_id: media_player.android_tv_192_168_1_184
+    data:
+      command: dumpsys battery
+    action: androidtv.adb_command
+  - delay: 00:00:02
+  - data:
+      title: Tablet Battery
+      message: 'Заряд: {{ states(''sensor.tablet_battery_level'') }}% {%- if is_state(''sensor.tablet_charging_status'',
+        ''on'') -%} ✅ Заряджається {%- else -%} ⚠️ Розряджається {%- endif -%}
+
+        '
+    action: persistent_notification.create
+  mode: single
+  description: ''
+tablet_check_screen_now:
+  alias: 'Tablet: Check Screen Now'
+  sequence:
+  - target:
+      entity_id: media_player.android_tv_192_168_1_184
+    data:
+      command: dumpsys power | grep mWakefulness
+    action: androidtv.adb_command
+  - delay: 00:00:02
+  - data:
+      title: Tablet Screen
+      message: 'Екран: {{ states(''binary_sensor.tablet_powered_on'') }}% {%- if is_state(''binary_sensor.tablet_powered_on'',
+        ''on'') -%} ✅ Увікнений {%- else -%} ⚠️ Вимкнений {%- endif -%}
+
+        '
+    action: persistent_notification.create
+  mode: single
+  description: ''

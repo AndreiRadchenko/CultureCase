@@ -1,0 +1,97 @@
+- sensor:
+    - name: "Tablet Battery Level"
+      unique_id: tablet_battery_level
+      state: >
+          {% set bat = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | default('') %}
+          {% if 'level:' in bat %}
+            {{ bat.split('level: ')[1].split(' ')[0] | int }}
+          {% else %} 
+            {{ states('sensor.tablet_battery_level') | default('N/A') }}
+          {% endif %}
+      unit_of_measurement: "%"
+      device_class: battery
+      state_class: measurement
+      icon: mdi:battery
+        
+    - name: "Tablet Charging Status"
+      unique_id: tablet_charging_status
+      state: >
+          {% set bat = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | default('') %}
+          {{ 'status: 2' in bat or states('binary_sensor.tablet_charging') == 'on' }}
+      device_class: power
+      icon: mdi:battery-charging-medium
+      
+    - name: "Tablet Battery %"
+      unique_id: tablet_battery_percent
+      unit_of_measurement: "%"
+      device_class: battery
+      state_class: measurement
+      state: >
+          {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | default('') %}
+          {% if 'level:' in resp %}
+            {{ resp.split('level: ')[1].split(' ')[0] | int }}
+          {% else %}
+            {{ states('sensor.tablet_battery_percent') | default(0) }}
+          {% endif %}
+      attributes:
+        voltage: >
+            {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') %}
+            {{ resp.split('voltage: ')[1].split(' ')[0] if 'voltage:' in resp else 'N/A' }}V
+        temperature: >
+            {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') %}
+            {{ (resp.split('temperature: ')[1].split(' ')[0] | int / 10) | round(1) if 'temperature:' in resp else 'N/A' }}°C 
+       
+- binary_sensor:
+      - name: "Tablet Charging"
+        unique_id: tablet_charging
+        device_class: power
+        state: >
+          {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | default('') %}
+          {{ 'status: 2' in resp }}
+        attributes:
+          status_code: >
+            {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') %}
+            {{ resp.split('status: ')[1].split(' ')[0] if 'status:' in resp else 'N/A' }}
+          status_text: >
+            {% set code = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') %}
+            {% set status = code.split('status: ')[1].split(' ')[0] | int(0) if 'status:' in code else 0 %}
+            {{ {'1':'Unknown','2':'Charging','3':'Discharging','4':'Not charging','5':'Full'}.get(status|string, 'Unknown') }} 
+
+      - name: "Tablet Screen On"
+        unique_id: tablet_screen_on
+        device_class: power
+        state: >
+          {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | default('') %}
+          {{ 'mScreenState=ON' in resp }}
+        attributes:
+          raw_response: >
+            {{ state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | truncate(100) }}
+          screen_state: >
+            {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | default('') %}
+            {{ resp.split('mScreenState=')[1].split(' ')[0] if 'mScreenState=' in resp else 'N/A' }}
+        icon: >
+          {% if is_state('binary_sensor.tablet_screen_on', 'on') %}
+            mdi:brightness-7
+          {% else %}
+            mdi:power-standby
+          {% endif %}  
+          
+      - name: "Tablet Powered On"
+        unique_id: tablet_powered_on
+        device_class: power
+        state: >
+          {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | default('') %}
+          {{ 'mWakefulness=Awake' in resp }}
+        attributes:
+          wakefulness: >
+            {% set resp = state_attr('media_player.android_tv_192_168_1_1084', 'adb_response') | default('') %}
+            {{ resp.split('mWakefulness=')[1].split(' ')[0] if 'mWakefulness=' in resp else 'N/A' }}
+          changing: >
+            {% set resp = state_attr('media_player.android_tv_192_168_1_184', 'adb_response') | default('') %}
+            {{ 'mWakefulnessChanging=false' in resp }}
+        icon: >
+          {% if is_state('binary_sensor.tablet_powered_on', 'on') %}
+            mdi:power
+          {% else %}
+            mdi:power-off
+          {% endif %}      
